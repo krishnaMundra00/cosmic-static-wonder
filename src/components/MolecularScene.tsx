@@ -67,11 +67,22 @@ export function MolecularScene() {
 
   useEffect(() => {
     const styles = getComputedStyle(document.documentElement);
+    const resolveColor = (value: string) => {
+      const canvas = document.createElement("canvas");
+      canvas.width = 1;
+      canvas.height = 1;
+      const context = canvas.getContext("2d");
+      if (!context) return "#888888";
+      context.fillStyle = value;
+      context.fillRect(0, 0, 1, 1);
+      const [red, green, blue] = context.getImageData(0, 0, 1, 1).data;
+      return `rgb(${red}, ${green}, ${blue})`;
+    };
     setColors({
-      ink: styles.getPropertyValue("--ink").trim(),
-      ivory: styles.getPropertyValue("--ivory").trim(),
-      mineral: styles.getPropertyValue("--mineral").trim(),
-      signal: styles.getPropertyValue("--signal").trim(),
+      ink: resolveColor(styles.getPropertyValue("--ink").trim()),
+      ivory: resolveColor(styles.getPropertyValue("--ivory").trim()),
+      mineral: resolveColor(styles.getPropertyValue("--mineral").trim()),
+      signal: resolveColor(styles.getPropertyValue("--signal").trim()),
     });
   }, []);
 
