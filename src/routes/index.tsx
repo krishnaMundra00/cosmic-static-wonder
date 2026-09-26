@@ -83,7 +83,7 @@ function Index() {
             <DnaScene />
           </div>
         </div>
-        <a href="#portfolio" aria-label="Scroll to medicine portfolio" className="absolute bottom-7 left-1/2 z-20 -translate-x-1/2 text-[10px] uppercase tracking-[0.28em] text-ivory/50">Scroll ↓</a>
+        <a href="#portfolio" aria-label="Scroll to medicine portfolio" className="absolute bottom-7 left-1/2 z-20 hidden -translate-x-1/2 text-[10px] uppercase tracking-[0.28em] text-ivory/50 sm:block">Scroll ↓</a>
       </section>
 
       <section id="portfolio" className="border-b border-border bg-ivory py-20 lg:py-28">
