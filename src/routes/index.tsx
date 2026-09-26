@@ -56,10 +56,10 @@ function Index() {
         </div>
       </header>
 
-      <section id="top" className="hero-stage relative min-h-[720px] overflow-hidden bg-ink text-ivory lg:min-h-[750px] lg:h-[88svh] lg:max-h-[940px]">
+      <section id="top" className="hero-stage relative h-[min(740px,94svh)] min-h-[620px] overflow-hidden bg-ink text-ivory sm:h-auto sm:min-h-[850px] lg:min-h-[750px] lg:h-[88svh] lg:max-h-[940px]">
         <div className="glass-panel glass-panel-one" />
         <div className="glass-panel glass-panel-two" />
-        <div className="mx-auto grid min-h-[720px] max-w-[1440px] items-center gap-2 px-6 pb-14 pt-28 sm:gap-8 lg:h-full lg:min-h-0 lg:grid-cols-12 lg:px-12 lg:pt-20">
+        <div className="mx-auto grid h-full max-w-[1440px] content-start gap-2 px-6 pb-10 pt-28 sm:min-h-[850px] sm:content-center sm:gap-8 lg:h-full lg:min-h-0 lg:grid-cols-12 lg:px-12 lg:pt-20">
           <div className="relative z-10 lg:col-span-7">
             <div className="rise flex items-center gap-3 text-[11px] uppercase tracking-[0.3em] text-ivory/65">
               <span className="h-px w-10 bg-signal" />
@@ -69,17 +69,17 @@ function Index() {
               Felicity<br /><em className="text-signal">Pharma.</em>
             </h1>
             <p className="rise-three mt-5 font-display text-2xl text-ivory/90 sm:text-3xl">Trusted Science. Better Days.</p>
-            <p className="rise-three mt-8 max-w-[48ch] text-pretty text-base leading-relaxed text-ivory/70 lg:text-lg">
+            <p className="rise-three mt-6 max-w-[48ch] text-pretty text-sm leading-relaxed text-ivory/70 sm:mt-8 sm:text-base lg:text-lg">
               We shape dependable medicines through scientific discipline, responsible standards, and a clear focus on the people they serve.
             </p>
-            <div className="rise-three mt-10 flex flex-wrap gap-4">
+            <div className="rise-three mt-7 flex flex-wrap gap-3 sm:mt-10 sm:gap-4">
               <a href="#portfolio" className="inline-flex items-center gap-2 rounded-full bg-signal px-6 py-3 text-sm text-ivory transition-colors hover:bg-ivory hover:text-ink">
                 Explore medicines <ArrowRight aria-hidden="true" size={16} />
               </a>
               <a href="#story" className="rounded-full border border-ivory/35 px-6 py-3 text-sm transition-colors hover:bg-ivory/10">Our story</a>
             </div>
           </div>
-          <div className="relative z-10 h-[330px] min-w-0 sm:h-[420px] lg:col-span-5 lg:h-[min(70vh,650px)]" role="img" aria-label="Slowly rotating three-dimensional DNA double helix">
+          <div className="absolute -bottom-15 right-0 z-0 h-[230px] w-[230px] min-w-0 sm:relative sm:bottom-auto sm:right-auto sm:z-10 sm:h-[420px] sm:w-auto lg:col-span-5 lg:h-[min(70vh,650px)]" role="img" aria-label="Slowly rotating three-dimensional DNA double helix">
             <DnaScene />
           </div>
         </div>
