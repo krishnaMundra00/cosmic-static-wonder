@@ -1,5 +1,5 @@
-- [ ] Rename visible brand and metadata to Felicity Pharma.
-- [ ] Replace molecule with reference-inspired 3D DNA artwork.
-- [ ] Round product cards and refine hover depth.
-- [ ] Replace principles with founder story and hand-drawn name circle; remove section 03.
-- [ ] Make Contact Us open email app and check mobile layouts.
+- [x] Rename visible brand and metadata to Felicity Pharma.
+- [x] Replace molecule with reference-inspired 3D DNA artwork.
+- [x] Round product cards and refine hover depth.
+- [x] Replace principles with founder story and hand-drawn name circle; remove section 03.
+- [x] Make Contact Us open a recipient-free email draft and check mobile layouts. A verified destination address is still needed for visitors to send to the company.
