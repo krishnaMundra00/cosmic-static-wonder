@@ -77,12 +77,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Veyra Pharma" },
+      { title: "Felicity Pharma" },
       { name: "description", content: "Trusted science for better days." },
-      { name: "author", content: "Veyra Pharma" },
+      { name: "author", content: "Felicity Pharma" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
       {
