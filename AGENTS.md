@@ -8,3 +8,6 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Keep the homepage as a static single-page editorial site with a procedural React Three Fiber DNA sculpture; it preserves the reference-inspired visual without an external model download.
+- Keep contact links as a recipient-free mailto draft until the company provides a verified email address; a fabricated inbox would silently lose enquiries.
