@@ -56,37 +56,39 @@ function Index() {
         </div>
       </header>
 
-      <section id="top" className="hero-stage relative h-[min(740px,94svh)] min-h-[620px] overflow-hidden bg-ink text-ivory sm:h-auto sm:min-h-[850px] lg:min-h-[750px] lg:h-[88svh] lg:max-h-[940px]">
+      <section id="top" className="hero-stage relative overflow-hidden text-ivory sm:min-h-[850px] lg:min-h-[750px] lg:h-[88svh] lg:max-h-[940px]">
         <div className="glass-panel glass-panel-one" />
         <div className="glass-panel glass-panel-two" />
-        <div className="mx-auto grid h-full max-w-[1440px] content-start gap-2 px-6 pb-10 pt-28 sm:min-h-[850px] sm:content-center sm:gap-8 lg:h-full lg:min-h-0 lg:grid-cols-12 lg:px-12 lg:pt-20">
-          <div className="relative z-10 lg:col-span-7">
+        <div className="mx-auto grid max-w-[1440px] content-start px-6 pb-7 pt-24 sm:min-h-[850px] sm:content-center sm:gap-x-8 lg:h-full lg:min-h-0 lg:grid-cols-12 lg:px-12 lg:pt-20">
+          <div className="relative z-10 lg:col-span-7 lg:row-start-1 lg:self-end">
             <div className="rise flex items-center gap-3 text-[11px] uppercase tracking-[0.3em] text-ivory/65">
               <span className="h-px w-10 bg-signal" />
               Maharashtra · India
             </div>
-            <h1 className="rise-two mt-8 max-w-[9ch] text-balance font-display text-[clamp(3.75rem,16vw,6rem)] leading-[0.9] lg:text-[8.5rem]">
+            <h1 className="rise-two mt-6 max-w-[9ch] text-balance font-display text-[clamp(3.75rem,16vw,6rem)] leading-[0.9] sm:mt-8 lg:text-[8.5rem]">
               Felicity<br /><em className="text-signal">Pharma.</em>
             </h1>
             <p className="rise-three mt-5 font-display text-2xl text-ivory/90 sm:text-3xl">Trusted Science. Better Days.</p>
-            <p className="rise-three mt-6 max-w-[48ch] text-pretty text-sm leading-relaxed text-ivory/70 sm:mt-8 sm:text-base lg:text-lg">
+          </div>
+          <div className="relative z-10 mt-4 h-[205px] w-full min-w-0 sm:h-[380px] lg:col-span-5 lg:col-start-8 lg:row-span-2 lg:row-start-1 lg:mt-0 lg:h-[min(70vh,650px)]" role="img" aria-label="Slowly rotating three-dimensional DNA double helix">
+            <DnaScene />
+          </div>
+          <div className="relative z-10 lg:col-span-7 lg:row-start-2 lg:self-start">
+            <p className="rise-three mt-2 max-w-[48ch] text-pretty text-sm leading-relaxed text-ivory/80 sm:mt-8 sm:text-base lg:text-lg">
               We shape dependable medicines through scientific discipline, responsible standards, and a clear focus on the people they serve.
             </p>
-            <div className="rise-three mt-7 flex flex-wrap gap-3 sm:mt-10 sm:gap-4">
+            <div className="rise-three mt-5 flex flex-wrap gap-3 sm:mt-10 sm:gap-4">
               <a href="#portfolio" className="inline-flex items-center gap-2 rounded-full bg-signal px-6 py-3 text-sm text-ivory transition-colors hover:bg-ivory hover:text-ink">
                 Explore medicines <ArrowRight aria-hidden="true" size={16} />
               </a>
               <a href="#story" className="rounded-full border border-ivory/35 px-6 py-3 text-sm transition-colors hover:bg-ivory/10">Our story</a>
             </div>
           </div>
-          <div className="absolute -bottom-15 right-0 z-0 h-[230px] w-[230px] min-w-0 sm:relative sm:bottom-auto sm:right-auto sm:z-10 sm:h-[420px] sm:w-auto lg:col-span-5 lg:h-[min(70vh,650px)]" role="img" aria-label="Slowly rotating three-dimensional DNA double helix">
-            <DnaScene />
-          </div>
         </div>
         <a href="#portfolio" aria-label="Scroll to medicine portfolio" className="absolute bottom-7 left-1/2 z-20 hidden -translate-x-1/2 text-[10px] uppercase tracking-[0.28em] text-ivory/50 sm:block">Scroll ↓</a>
       </section>
 
-      <section id="portfolio" className="border-b border-border bg-ivory py-20 lg:py-28">
+      <section id="portfolio" className="portfolio-stage border-b border-border py-20 lg:py-28">
         <div className="mx-auto flex max-w-[1440px] flex-col justify-between gap-6 px-6 lg:flex-row lg:items-end lg:px-12">
           <div className="flex items-start gap-5">
             <span className="font-display text-7xl leading-none text-signal lg:text-8xl">01</span>
@@ -117,7 +119,7 @@ function Index() {
         </div>
       </section>
 
-      <section id="story" className="bg-ink py-20 text-ivory lg:py-28">
+      <section id="story" className="story-stage py-20 text-ivory lg:py-28">
         <div className="mx-auto grid max-w-[1440px] gap-14 px-6 md:grid-cols-2 md:gap-20 lg:px-12">
           <div>
             <span className="font-display text-7xl leading-none text-signal lg:text-8xl">02</span>
@@ -140,31 +142,27 @@ function Index() {
         </div>
       </section>
 
-      <footer className="border-t border-ivory/10 bg-ink text-ivory">
-        <div className="mx-auto max-w-[1440px] px-6 py-16 lg:px-12 lg:py-20">
-          <div className="grid gap-12 lg:grid-cols-12">
-            <div className="lg:col-span-5">
-              <div className="flex items-baseline gap-2"><span className="font-display text-5xl">Felicity</span><span className="text-[10px] uppercase tracking-[0.3em] text-ivory/45">Pharma</span></div>
-              <p className="mt-5 max-w-[36ch] text-sm leading-relaxed text-ivory/55">Trusted Science. Better Days. An India-focused pharmaceutical company built around quality, access, and people.</p>
-              <div className="mt-8 flex gap-3">
-                {socialLinks.map(({ label, icon }) => <a key={label} href="#" aria-label={label} title={label} className="grid size-11 place-items-center rounded-full border border-ivory/25 transition-colors hover:border-signal hover:bg-signal">{icon}</a>)}
+      <footer className="footer-stage border-t border-ivory/10 text-ivory">
+        <div className="mx-auto max-w-[1440px] px-5 py-8 sm:px-6 sm:py-16 lg:px-12 lg:py-20">
+          <div className="grid grid-cols-[minmax(0,1fr)_auto] gap-3 sm:gap-12 lg:grid-cols-12">
+            <div className="min-w-0 lg:col-span-7">
+              <div className="flex items-baseline gap-1 sm:gap-2"><span className="font-display text-3xl sm:text-5xl">Felicity</span><span className="text-[8px] uppercase tracking-[0.2em] text-ivory/55 sm:text-[10px] sm:tracking-[0.3em]">Pharma</span></div>
+              <p className="mt-5 hidden max-w-[36ch] text-sm leading-relaxed text-ivory/65 sm:block">Trusted Science. Better Days. An India-focused pharmaceutical company built around quality, access, and people.</p>
+              <div className="mt-4 flex gap-2 sm:mt-8 sm:gap-3">
+                {socialLinks.map(({ label, icon }) => <a key={label} href="#" aria-label={label} title={label} className="grid size-9 shrink-0 place-items-center rounded-full border border-ivory/30 transition-colors hover:border-signal hover:bg-signal sm:size-11">{icon}</a>)}
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:col-span-7">
-              {[
-                ["Explore", ["Medicines", "Quality", "Our story"]],
-                ["Company", ["About", "Careers", "Contact"]],
-                ["Legal", ["Privacy", "Terms", "Disclaimer"]],
-              ].map(([heading, links]) => (
-                <div key={heading as string}>
-                  <h4 className="text-[10px] uppercase tracking-[0.25em] text-ivory/35">{heading}</h4>
-                  <ul className="mt-5 space-y-3 text-sm text-ivory/65">{(links as string[]).map((link) => <li key={link}><a href="#top" className="transition-colors hover:text-signal">{link}</a></li>)}</ul>
-                </div>
-              ))}
+            <div className="shrink-0 lg:col-span-5 lg:justify-self-end">
+              <h4 className="text-[10px] uppercase tracking-[0.25em] text-ivory/55">Company</h4>
+              <ul className="mt-3 space-y-2 text-sm text-ivory/80 sm:mt-5 sm:space-y-3">
+                <li><a href="#story" className="transition-colors hover:text-founder-green">About</a></li>
+                <li><a href="#portfolio" className="transition-colors hover:text-founder-green">Product</a></li>
+                <li><a href={contactHref} className="transition-colors hover:text-founder-green">Contact</a></li>
+              </ul>
             </div>
           </div>
-          <div className="mt-16 flex flex-col justify-between gap-4 border-t border-ivory/10 pt-8 text-[10px] uppercase tracking-[0.18em] text-ivory/35 sm:flex-row">
-            <span>© 2026 Felicity Pharma · Illustrative concept</span><span>No medical advice · Product data pending approval</span>
+          <div className="mt-7 border-t border-ivory/15 pt-4 text-[10px] text-ivory/55 sm:mt-16 sm:pt-8">
+            © 2026 Felicity Pharma. All rights reserved.
           </div>
         </div>
       </footer>
