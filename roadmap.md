@@ -3,3 +3,6 @@
 - [x] Round product cards and refine hover depth.
 - [x] Replace principles with founder story and hand-drawn name circle; remove section 03.
 - [x] Make Contact Us open a recipient-free email draft and check mobile layouts. A verified destination address is still needed for visitors to send to the company.
+- [ ] Recolor the site in white and blue background shades with green accents, preserving its design.
+- [ ] Simplify the footer to Company links and a 2026 rights notice, with a compact horizontal mobile layout.
+- [ ] Move the mobile DNA into view below the opening text and verify narrow screens.
