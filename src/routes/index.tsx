@@ -78,10 +78,10 @@ function Index() {
               We shape dependable medicines through scientific discipline, responsible standards, and a clear focus on the people they serve.
             </p>
             <div className="rise-three mt-4 flex flex-wrap gap-3 sm:mt-10 sm:gap-4">
-              <a href="#portfolio" className="inline-flex items-center gap-2 rounded-full bg-signal px-6 py-3 text-sm text-ivory transition-colors hover:bg-ivory hover:text-ink">
+              <a href="#portfolio" className="inline-flex items-center gap-2 rounded-full bg-signal px-4 py-3 text-xs text-ivory transition-colors hover:bg-ivory hover:text-ink min-[360px]:px-6 min-[360px]:text-sm">
                 Explore medicines <ArrowRight aria-hidden="true" size={16} />
               </a>
-              <a href="#story" className="rounded-full border border-ivory/35 px-6 py-3 text-sm transition-colors hover:bg-ivory/10">Our story</a>
+              <a href="#story" className="rounded-full border border-ivory/35 px-4 py-3 text-xs transition-colors hover:bg-ivory/10 min-[360px]:px-6 min-[360px]:text-sm">Our story</a>
             </div>
           </div>
         </div>
